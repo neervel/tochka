@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в интернет-банк</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <app-root _nghost-c0="" ng-version="6.1.1">
+    <app-message _ngcontent-c0="" _nghost-c1="" style="height: 0px;">
+      <div _ngcontent-c1="" class="message">
+        <div _ngcontent-c1="" class="message__container" id="message__container">
+          <div _ngcontent-c1="" class="message__content">
+            <!---->
+            <div _ngcontent-c1="" class="message__content-title"></div>
+            <div _ngcontent-c1="" class="message__content-text"></div>
+          </div>
+          <div _ngcontent-c1="" class="message__side">
+            <!---->
+            <!---->
+            <div _ngcontent-c1="" class="message__close"><img _ngcontent-c1="" class="message__close--black"
+                src="./assets/svg/close.svg"><img _ngcontent-c1="" class="message__close--white"
+                src="./assets/svg/close_w.svg"></div>
+          </div>
+        </div>
+      </div>
+    </app-message>
+    <div _ngcontent-c0="" class="app app--positive">
+      <div _ngcontent-c0="" class="back"></div>
+      <!---->
+      <router-outlet _ngcontent-c0=""></router-outlet>
+      <app-common-page _nghost-c2="">
+        <div _ngcontent-c2="" class="common-page">
+          <app-header _ngcontent-c2="" _nghost-c3="">
+            <div _ngcontent-c3="" class="header">
+              <div _ngcontent-c3="" class="header__container"><a _ngcontent-c3="" class="header__logo"
+                  href="https://tochka.com"><img _ngcontent-c3="" class="header__logo--desktop"
+                    src="./assets/svg/logo.svg"><img _ngcontent-c3="" class="header__logo--mobile"
+                    src="./assets/svg/logo_single.svg"></a>
+                <div _ngcontent-c3="" class="header__call">
+                  <div _ngcontent-c3="" class="header__callbutton">Позвонить в Точку</div>
+                </div>
+              </div>
+            </div>
+          </app-header>
+          <app-login-form _ngcontent-c2="" _nghost-c4="">
+            <form _ngcontent-c4="" action="./cab.html" class="ng-untouched ng-pristine ng-valid">
+              <div _ngcontent-c4="" class="login">
+                <div _ngcontent-c4="" class="login__container">
+                  <div _ngcontent-c4="" class="login__form">
+                    <div _ngcontent-c4="" class="login__form-content">
+                      <div _ngcontent-c4="" class="login__title">Вход в&nbsp;интернет‑банк</div>
+                      <div _ngcontent-c4="" class="login__additional-text"></div>
+                      <tui-control-group _ngcontent-c4="" class="login__form-group">
+                        <tui-input-container _ngcontent-c4=""><label
+                            class="tui-input-container tui-control tui-input-container--unlabeled tui-control--empty">
+                            <div class="tui-input-container__wrapper">
+                              <!----><input _ngcontent-c4=""
+                                class="tui-input tui-control ng-untouched ng-pristine ng-valid" name="username"
+                                placeholder="Логин или телефон +7..." tuiinput="" autofocus="" required>
+                              <!---->
+                              <!---->
+                            </div>
+                          </label></tui-input-container>
+                        <tui-input-container _ngcontent-c4=""><label
+                            class="tui-input-container tui-control tui-input-container--unlabeled tui-control--empty">
+                            <div class="tui-input-container__wrapper">
+                              <!----><input _ngcontent-c4=""
+                                class="tui-input tui-control ng-untouched ng-pristine ng-valid" name="password"
+                                placeholder="Пароль" tuiinput="" type="password" required>
+                              <!---->
+                              <!---->
+                            </div>
+                          </label></tui-input-container>
+                      </tui-control-group>
+                      <!----><button _ngcontent-c4="" class="login__submit" fullwidth="" tuibutton="" type="submit"
+                        ><span _ngcontent-c4="">Войти</span></button>
+                      <!---->
+                      <div _ngcontent-c4=""><a _ngcontent-c4="" class="login__forgot tui-link" tuilink=""> Забыли
+                          пароль? </a></div>
+                      <div _ngcontent-c4="" class="login__form-alternative">
+                        <!---->
+                        <!---->
+                        <div _ngcontent-c4="" class="login__form-esia">
+                          <app-esia-button _ngcontent-c4="" caption="Войти через Госуслуги" _nghost-c8=""><button
+                              _ngcontent-c8="" class="esia-button" type="button"><span _ngcontent-c8=""
+                                class="esia-button__icon-esia"></span><span _ngcontent-c8=""
+                                class="esia-button__caption">Войти через Госуслуги</span></button></app-esia-button>
+                          <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div _ngcontent-c4="" class="login__phones">
+                <div _ngcontent-c4="" class="login__phones-item"><a _ngcontent-c4="" class="login__phones-number"
+                    href="tel:88002000024">8&nbsp;800&nbsp;200‑00‑24</a>
+                  <div _ngcontent-c4="" class="login__phones-description">Для звонков из России</div>
+                </div>
+                <div _ngcontent-c4="" class="login__phones-item"><a _ngcontent-c4="" class="login__phones-number"
+                    href="tel:74952213224">+7&nbsp;(495)&nbsp;221‑32‑24</a>
+                  <div _ngcontent-c4="" class="login__phones-description">Для звонков из-за границы</div>
+                </div>
+              </div>
+            </form>
+          </app-login-form>
+          <!---->
+        </div>
+      </app-common-page>
+      <!---->
+    </div>
+  </app-root>
+  <script type="text/javascript" src="runtime.fee37d99216742a9d9c9.js"></script>
+  <script type="text/javascript" src="polyfills.9ab065b5028c0f6fa4de.js"></script>
+  <script type="text/javascript" src="main.d4a87ce67622ec8d91cc.js"></script>
+
+</body>
+
+</html>
