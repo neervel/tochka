@@ -39,7 +39,7 @@ $(window).on('load', () => {
           .container.-body {
               background-color: #f7f3f2 !important;
           }
-          .message.-operator:first-child {
+          .message.-operator[data-v-8ecca81a] {
             display: none;
           }
           .content.accent-color-bg {
